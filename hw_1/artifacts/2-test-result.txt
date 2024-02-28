@@ -1,0 +1,58 @@
+➜  hw_1 git:(master) ✗ python3 2-solution.py artifacts/2-empty-file.txt
+➜  hw_1 git:(master) ✗ python3 2-solution.py artifacts/2-a-few.txt
+1
+2
+3
+➜  hw_1 git:(master) ✗ python3 2-solution.py artifacts/2-a-lot-of.txt
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+➜  hw_1 git:(master) ✗ python3 2-solution.py artifacts/2-without-trailing-newline.txt
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20%
+➜  hw_1 git:(master) ✗ python3 2-solution.py < artifacts/2-without-trailing-newline.txt
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20%
+➜  hw_1 git:(master) ✗ python3 2-solution.py artifacts/2-empty-file.txt artifacts/2-a-few.txt
+==> artifacts/2-empty-file.txt <==
+
+==> artifacts/2-a-few.txt <==
+1
+2
+3
+➜  hw_1 git:(master) ✗ python3 2-solution.py artifacts/2-empty-file.txt wrong artifacts/2-a-few.txt
+==> artifacts/2-empty-file.txt <==
+
+==> wrong <==
+[Errno 2] No such file or directory: 'wrong'
+➜  hw_1 git:(master) ✗
