@@ -1,0 +1,41 @@
+➜  hw_1 git:(master) ✗ python3 3-solution.py artifacts/3-empty.txt
+       0       0       0 artifacts/3-empty.txt
+➜  hw_1 git:(master) ✗ wc artifacts/3-empty.txt
+       0       0       0 artifacts/3-empty.txt
+➜  hw_1 git:(master) ✗ python3 3-solution.py artifacts/3-simple.txt
+       5      10      52 artifacts/3-simple.txt
+➜  hw_1 git:(master) ✗ wc artifacts/3-simple.txt
+       5      10      52 artifacts/3-simple.txt
+➜  hw_1 git:(master) ✗ python3 3-solution.py artifacts/3-punctuation.txt
+       8      14     120 artifacts/3-punctuation.txt
+➜  hw_1 git:(master) ✗ wc artifacts/3-punctuation.txt
+       8      14     120 artifacts/3-punctuation.txt
+➜  hw_1 git:(master) ✗ python3 3-solution.py artifacts/3-only-empty-lines.txt
+       4       0       4 artifacts/3-only-empty-lines.txt
+➜  hw_1 git:(master) ✗ wc artifacts/3-only-empty-lines.txt
+       4       0       4 artifacts/3-only-empty-lines.txt
+➜  hw_1 git:(master) ✗ python3 3-solution.py artifacts/3-only-empty-lines.txt artifacts/3-simple.txt artifacts/3-punctuation.txt
+       4       0       4 artifacts/3-only-empty-lines.txt
+       5      10      52 artifacts/3-simple.txt
+       8      14     120 artifacts/3-punctuation.txt
+      17      24     176 total
+➜  hw_1 git:(master) ✗ wc artifacts/3-only-empty-lines.txt artifacts/3-simple.txt artifacts/3-punctuation.txt
+       4       0       4 artifacts/3-only-empty-lines.txt
+       5      10      52 artifacts/3-simple.txt
+       8      14     120 artifacts/3-punctuation.txt
+      17      24     176 total
+➜  hw_1 git:(master) ✗ python3 3-solution.py
+one
+
+2
+
+три четыре,,,42
+       5       4      33
+➜  hw_1 git:(master) ✗ wc
+one
+
+2
+
+три четыре,,,42
+       5       4      33
+➜  hw_1 git:(master) ✗

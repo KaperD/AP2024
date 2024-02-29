@@ -3,6 +3,7 @@ import sys
 import fileinput
 import collections
 
+
 def process_one(file: str, number_of_lines: int):
     last_lines = collections.deque(maxlen=number_of_lines)
     try:
