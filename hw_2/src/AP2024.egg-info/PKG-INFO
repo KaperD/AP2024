@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: AP2024
+Version: 0.0.3
+Summary: 2-2
+Author-email: Danil Bubnov <bubnovdanilbk@gmail.com>
+Project-URL: Homepage, https://github.com/KaperD/AP2024
+Project-URL: Issues, https://github.com/KaperD/AP2024/issues
+Requires-Python: >=3.8

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AP2024"
+version = "0.0.3"
+authors = [
+  { name="Danil Bubnov", email="bubnovdanilbk@gmail.com" },
+]
+description = "2-2"
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/KaperD/AP2024"
+Issues = "https://github.com/KaperD/AP2024/issues"

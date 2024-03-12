@@ -1,5 +1,6 @@
 __all__ = [
-    "create_latex_table"
+    "create_latex_table",
+    "create_latex_image"
 ]
 
 
@@ -36,3 +37,9 @@ def count_columns(table):
 
 def create_latex_table(table):
     return create_begin_table(count_columns(table)) + create_rows(table, count_columns(table)) + create_end_table()
+
+
+def create_latex_image(path_to_image):
+    return f"""
+\\includegraphics[scale=1.0]{{{path_to_image}}}
+"""

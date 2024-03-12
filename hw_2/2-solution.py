@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-from src.AP2024.module1 import create_latex_table
+from AP2024.module1 import create_latex_table, create_latex_image
 
 
 def create_begin_document():
     return r"""\documentclass{article}
+\usepackage{graphicx}
 \begin{document}
 \begin{center}
 """
@@ -21,7 +22,7 @@ if __name__ == "__main__":
         [],
         ["1\n2", None]
     ]
-    result_document = create_begin_document() + create_latex_table(table) + \
+    result_document = create_begin_document() + create_latex_table(table) + create_latex_image("artifacts/universe.jpg") + \
         create_end_document()
-    with open("artifacts/1-RESULT.tex", "w") as file:
+    with open("artifacts/2-RESULT.tex", "w") as file:
         file.write(result_document)
