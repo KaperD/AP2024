@@ -22,7 +22,7 @@ if __name__ == "__main__":
         [],
         ["1\n2", None]
     ]
-    result_document = create_begin_document() + create_latex_table(table) + create_latex_image("artifacts/universe.jpg") + \
+    result_document = create_begin_document() + create_latex_table(table) + create_latex_image("universe.jpg") + \
         create_end_document()
     with open("artifacts/2-RESULT.tex", "w") as file:
         file.write(result_document)
