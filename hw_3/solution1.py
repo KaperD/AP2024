@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from typing import Self, Tuple
+import os
 
 
 class APMatrix:
@@ -12,7 +13,7 @@ class APMatrix:
         return f"APMatrix({repr(self.data)})"
 
     def __str__(self) -> str:
-        return "\n".join([", ".join([str(value) for value in row]) for row in self.data])
+        return os.linesep.join([", ".join([str(value) for value in row]) for row in self.data])
 
     def __add__(self, other) -> Self:
         self.check_dimensions(other)
@@ -50,3 +51,19 @@ class APMatrix:
         if self_dimensions[1] != other_dimensions[0]:
             raise ValueError(
                 f"Dimensions mismatch for matrix oprtation: {self_dimensions} and {other_dimensions}")
+
+
+if __name__ == "__main__":
+    import numpy as np
+    np.random.seed(0)
+    a = APMatrix(np.random.randint(0, 10, (10, 10)).tolist())
+    b = APMatrix(np.random.randint(0, 10, (10, 10)).tolist())
+    sum = a + b
+    with open("artifacts/3.1/matrix+.txt", "w") as f:
+        f.write(str(sum))
+    mul = a * b
+    with open("artifacts/3.1/matrix*.txt", "w") as f:
+        f.write(str(mul))
+    mat_mul = a @ b
+    with open("artifacts/3.1/matrix@.txt", "w") as f:
+        f.write(str(mat_mul))
