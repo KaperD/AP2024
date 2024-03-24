@@ -5,6 +5,7 @@ import os
 from threading import Thread
 from multiprocessing import Process
 
+
 def fibonacci(n: int):
     a = 0
     b = 1
@@ -12,9 +13,11 @@ def fibonacci(n: int):
         a, b = b, a + b
     return a
 
+
 def process():
     for _ in range(10):
         fibonacci(10000)
+
 
 def sequential() -> float:
     start = time.time()
@@ -22,6 +25,7 @@ def sequential() -> float:
         process()
     end = time.time()
     return end - start
+
 
 def threading() -> float:
     start = time.time()
@@ -35,6 +39,7 @@ def threading() -> float:
     end = time.time()
     return end - start
 
+
 def processing() -> float:
     start = time.time()
     processes = []
@@ -46,6 +51,7 @@ def processing() -> float:
         p.join()
     end = time.time()
     return end - start
+
 
 if __name__ == "__main__":
     seq = sequential()

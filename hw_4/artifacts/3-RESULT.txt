@@ -1,0 +1,30 @@
+Hello
+Main sending Hello to A at 1711222245.517934
+A sending hello to B at 1711222245.519021
+B sending uryyb to Main at 1711222245.521239
+uryyb
+hello
+Main sending hello to A at 1711222250.380142
+A sending hello to B at 1711222250.523542
+B sending uryyb to Main at 1711222250.523999
+uryyb
+Hello
+Main sending Hello to A at 1711222252.572598
+A sending hello to B at 1711222255.5288892
+B sending uryyb to Main at 1711222255.529242
+uryyb
+a
+Main sending a to A at 1711222255.797943
+A sending a to B at 1711222260.5300689
+B sending n to Main at 1711222260.5303822
+n
+HELLO
+Main sending HELLO to A at 1711222266.1818602
+A sending hello to B at 1711222266.182079
+B sending uryyb to Main at 1711222266.1821718
+uryyb
+hello
+Main sending hello to A at 1711222267.5939252
+A sending hello to B at 1711222271.182327
+B sending uryyb to Main at 1711222271.182841
+uryyb
